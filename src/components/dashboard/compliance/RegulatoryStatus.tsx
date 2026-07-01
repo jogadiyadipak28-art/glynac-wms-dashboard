@@ -58,7 +58,7 @@ export default function RegulatoryStatus() {
             <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
             <XAxis dataKey="regulation" tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
             <YAxis domain={[60, 100]} tickFormatter={(v) => `${v}%`} tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
-            <Tooltip formatter={(v) => [`${v}%`, 'Score']} contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+            <Tooltip formatter={(v) => `${v}%`} contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }} />
             <Bar dataKey="score" radius={[4, 4, 0, 0]}>
               {regulatoryData.map((entry) => (
                 <Cell key={entry.regulation} fill={getBarColor(entry.score)} />

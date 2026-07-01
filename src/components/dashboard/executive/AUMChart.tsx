@@ -27,7 +27,6 @@ const aumData = [
 ];
 
 const formatYAxis = (value: number) => `$${value / 1000}B`;
-const formatTooltip = (value: number) => [`$${value}M`, ''];
 
 export default function AUMChart() {
   return (
@@ -62,7 +61,7 @@ export default function AUMChart() {
           <XAxis dataKey="month" tick={{ fontSize: 12, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
           <YAxis tickFormatter={formatYAxis} tick={{ fontSize: 12, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
           <Tooltip
-            formatter={formatTooltip}
+            formatter={(value) => `$${value}M`}
             contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)' }}
           />
           <Legend wrapperStyle={{ fontSize: 12 }} />

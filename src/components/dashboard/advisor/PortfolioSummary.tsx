@@ -71,7 +71,7 @@ export default function PortfolioSummary() {
                     <Cell key={entry.name} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(v) => [`${v}%`, '']} contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+                <Tooltip formatter={(v) => `${v}%`} contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }} />
               </PieChart>
             </ResponsiveContainer>
             <div className="flex-1 space-y-2">
@@ -96,7 +96,7 @@ export default function PortfolioSummary() {
               <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
               <XAxis dataKey="month" tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
               <YAxis domain={[450, 500]} tickFormatter={(v) => `$${v}M`} tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} />
-              <Tooltip formatter={(v) => [`$${v}M`, 'AUM']} contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }} />
+              <Tooltip formatter={(v) => `$${v}M`} contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }} />
               <Line type="monotone" dataKey="value" stroke="#3b82f6" strokeWidth={2.5} dot={{ r: 4, fill: '#3b82f6' }} activeDot={{ r: 6 }} />
             </LineChart>
           </ResponsiveContainer>
