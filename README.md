@@ -86,10 +86,10 @@ npm start
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| [Next.js](https://nextjs.org/) | 15.4.6 | App framework (App Router) |
-| [React](https://react.dev/) | 19 | UI library |
+| [Next.js](https://nextjs.org/) | 15.5.19 | App framework (App Router) |
+| [React](https://react.dev/) | 19.1.0 | UI library |
 | [Tailwind CSS](https://tailwindcss.com/) | 4 | Styling |
-| [Recharts](https://recharts.org/) | 2.x | Charts (Area, Bar, Line, Pie, Radar, Scatter) |
+| [Recharts](https://recharts.org/) | 3.9.1 | Charts (Area, Bar, Line, Pie, Radar, Scatter) |
 | [Lucide React](https://lucide.dev/) | 0.511 | Icons |
 | TypeScript | 5 | Type safety |
 
