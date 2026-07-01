@@ -38,7 +38,7 @@ export default function PerformanceOverview() {
             tickLine={false}
           />
           <Tooltip
-            formatter={(val: number) => `${val}%`}
+            formatter={(val) => `${Number(val)}%`}
             contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0' }}
           />
           <ReferenceLine y={0} stroke="#cbd5e1" />
